@@ -1,0 +1,39 @@
+h1 {
+    color: red;
+    text-decoration: underline;
+    
+}
+
+#cabecera1 {
+    font-weight: 600; important
+
+}
+
+.filas_azul {
+    color: blue;
+    text-align: center;
+}
+
+.filas_rojo {
+    color: rgb(226, 43, 113);
+    text-align: center;
+}
+
+th {
+    background-color: rgb(153, 165, 42);
+    text-align: center;
+}
+
+td, th {
+    border-radius: 5px;
+}
+
+tr {
+    background-color: aqua;
+}
+
+table {
+    border-color: rgb(165, 42, 144);
+    border-width: 10px;
+}
+
