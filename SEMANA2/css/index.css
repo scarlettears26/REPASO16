@@ -1,0 +1,52 @@
+h1 {
+
+    /* font-family*/
+    /* que pasa si una fuente no existe */
+    /*en css tenemos la opcion de poner varias tipos de letra */
+    /* para que si la primera no existe en css busque en la segunda y asi consecutivamente*/
+    
+    font-family: -apple-system,'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100px;
+
+    /*al poner el epso en font witgh no se pone unidades de medida*/
+
+    font-weight: 100;
+
+    text-decoration: underline;
+
+}
+
+/*nota : 700= bold
+         900= bolder  */
+
+
+.parrafo {
+    font-family: monospace;
+
+    font-size: 100px;
+
+    font-weight: bold;
+}
+
+
+/*Hexadecimal
+RGB-> Red Green Blue
+RGBA-> Red green Blue Alpha
+Alpha-> Opacidad 0-1
+hsl-> Hue saturation lightnes*/
+
+.link-a {
+
+    /*al poner none en una propiedad estamos invalidado*/
+
+    text-decoration: none;
+
+    /*con la propiedad color le ponermos un colro al texto*/
+    /* Hexadecimal: form apara poner color  basado en 6 digitos alfanumericos*/
+
+    font-size: 40px;
+    font-family: monospace;
+    color: rgb(46, 24, 126);
+
+}
+

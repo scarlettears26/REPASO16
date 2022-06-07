@@ -1,0 +1,21 @@
+h1 {
+
+    /* font-family*/
+    /* que pasa si una fuente no existe */
+    /*en css tenemos la opcion de poner varias tipos de letra */
+    /* para que si la primera no existe en css busque en la segunda y asi consecutivamente*/
+    
+    font-family: -apple-system,'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100px;
+    font-weight: 100;
+    
+}
+
+.parrafo {
+    font-family: monospace;
+
+    font-size: 100px;
+
+    font-weight: bold;
+}
+
