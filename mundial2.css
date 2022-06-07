@@ -1,0 +1,95 @@
+
+
+
+@font-face {
+    font-family: "Playball";
+    src: url(../fonts_mundial/Playball-Regular.ttf);
+
+}
+
+@font-face {
+  font-family: "Play";
+  src: url(../fonts_mundial/Play-Bold.ttf);
+  
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url(../fonts_mundial/Jost-Italic-VariableFont_wght.ttf);
+
+}
+
+
+
+@font-face {
+  font-family: "SedgwickAveDisplay";
+  src: url(../fonts_mundial/SedgwickAveDisplay-Regular.ttf);
+
+
+}
+
+h1 {
+    
+    font-family: "SedgwickAveDisplay";
+
+    font-weight: 400;
+
+    font-size: 100px;
+
+   font-weight: 100;
+
+    text-decoration: underline;
+
+    background-color: aquamarine;
+
+}
+
+
+.subtit1 {
+
+    font-family: "Playball";
+
+    font-size: 50px;
+
+    font-weight: bold;
+
+    background-color: red
+    
+   
+}
+
+.subtit2 {
+
+    text-decoration: line-through;
+    text-decoration-color: #f01;
+    font-family: "Playball";
+
+}
+
+.titulos {
+    color: #fff;
+    text-decoration: underline;
+    background-color: rgb(252, 90, 255);
+    text-decoration-color: rgb(255, 183, 0);
+    font-family: "SedgwickAveDisplay"
+    text-transform: lowercase;
+}
+
+.titulos2 
+{
+    color: rgb(226, 237, 241);
+    text-decoration: overline;
+    background-color: rgb(45, 100, 59);
+    text-decoration-color: rgb(255, 183, 0);
+    font-family: "Jost"
+
+}
+
+.titulos3 {
+
+    text-decoration: overline;
+
+    background-color: #0ba;
+    text-decoration-color: rgb(255, 255, 255);
+    font-family: "SedgwickAveDisplay"
+}

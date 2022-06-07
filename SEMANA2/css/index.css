@@ -5,14 +5,19 @@ h1 {
     /*en css tenemos la opcion de poner varias tipos de letra */
     /* para que si la primera no existe en css busque en la segunda y asi consecutivamente*/
     
-    font-family: -apple-system,'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 100px;
+    font-family: "Play";
+
+    font-weight: 400;
+
+    font-size: 100px;
 
     /*al poner el epso en font witgh no se pone unidades de medida*/
 
     font-weight: 100;
 
     text-decoration: underline;
+
+    background-color: aquamarine;
 
 }
 
@@ -21,7 +26,8 @@ h1 {
 
 
 .parrafo {
-    font-family: monospace;
+
+    font-family: "Playball";
 
     font-size: 100px;
 
@@ -45,8 +51,90 @@ hsl-> Hue saturation lightnes*/
     /* Hexadecimal: form apara poner color  basado en 6 digitos alfanumericos*/
 
     font-size: 40px;
-    font-family: monospace;
+    font-family: Dank Mono, monospace;
     color: rgb(46, 24, 126);
 
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+ul {
+    background-color: rgb(196, 197, 255, 0.3);
+}
+
+.span-1 {
+    text-decoration: line-through;
+    text-transform: capitalize;
+  }
+  
+  .span-2 {
+    text-decoration: overline;
+  }
+  
+  .span-3 {
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+  
+  .span-4 {
+    text-decoration: line-through;
+    text-decoration-color: #f01;
+    font-family: "Playball";
+
+  }
+  
+  .span-5 {
+    text-decoration: overline;
+    background-color: #0ba;
+    text-decoration-color: #fff;
+  }
+  
+  /* 
+    lowercase => Minusculas
+    uppercase => mayusculas
+    capitalize => Primera del text en mayuscula
+   */
+  
+  .span-6 {
+    color: #fff;
+    text-decoration: underline;
+    background-color: rgb(252, 90, 255);
+    text-decoration-color: rgb(255, 183, 0);
+    /* Estamos indicando que el texto sea en minusiculas */
+    text-transform: lowercase;
+  }
+
+
+  /* para importar las fuentes, priemro se descarga descomprime y carga se arrastra al fodler fonts*/
+ 
+  @font-face {
+      font-family: "Playball";
+      src: url(../fonts/Playball-Regular.ttf);
+
+  }
+
+  @font-face {
+    font-family: "Play";
+    src: url(../fonts/Play-Regular.ttf);
+    
+}
+
+@font-face {
+    font-family: "Joan";
+    src: url(../fonts/Joan-Regular.ttf);
+
+}
+
+.parrafo-2 {
+
+    font-family: "Joan";
+    font-size: 50px;
+}
+
+
+.lista {
+    font-size: 30px;
+    font-family: "Playball";
+}
