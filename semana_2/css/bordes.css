@@ -1,0 +1,48 @@
+.solid {
+    border-style: solid;
+    text-align: center;
+    border-color: red;
+    border-width: 5px;
+    
+}
+
+.dashed{
+    border-style: dashed;
+    text-align: center;
+    border-color: rgb(21, 255, 0);
+    border-width: 5px;
+
+    
+}
+
+.dotted {
+    border-style: dotted;
+    text-align: center;
+    border-color: rgb(247, 0, 255);
+    border-width: 10px;
+    
+}
+
+.groove {
+    border-style: groove;
+    text-align: center;
+    border-color: rgb(0, 255, 242);
+    border-width: 8px;
+    
+}
+
+.inset {
+    border-style: inset;
+    text-align: center;
+    border-color: rgb(217, 255, 0);
+    border-width: 18px;
+    
+}
+
+.border_bottom {
+
+    border-bottom: double;
+    border-color: rgb(217, 255, 0);
+    border-width: 18px;
+    text-align: center;
+}

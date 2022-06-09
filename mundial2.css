@@ -72,17 +72,15 @@ h1 {
     background-color: rgb(252, 90, 255);
     text-decoration-color: rgb(255, 183, 0);
     font-family: "SedgwickAveDisplay"
-    text-transform: lowercase;
+    
 }
 
-.titulos2 
-{
+.titulos2  {
     color: rgb(226, 237, 241);
     text-decoration: overline;
     background-color: rgb(45, 100, 59);
     text-decoration-color: rgb(255, 183, 0);
-    font-family: "Jost"
-
+    font-family: "Jost";
 }
 
 .titulos3 {
