@@ -1,0 +1,42 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+header {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    /* !ojo: No tiene unidad de medida */
+    z-index: 1;
+  }
+
+nav {
+    background-color: darkslateblue;
+}
+
+
+ul li {
+    display: inline;
+    
+}
+
+ul {
+    padding: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+div {
+     
+    position: relative;
+    top: 100px;
+}
+   
+#nosotros {
+    height: 100vh;
+    background-color: aqua;
+}
