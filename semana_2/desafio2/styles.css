@@ -17,7 +17,7 @@ body {
         width: 375px;
         background-color: hsl(216, 50%, 16%);
         text-align: center;
-        padding: 10px;
+        padding: 30px;
         border-radius: 16px;
         margin: auto;
         position: relative;
@@ -47,14 +47,14 @@ body {
   
   .diamond  {
      text-align: left;
-     float: left;
+/*      float: left; */
      margin-top: 10px;
      
   }
 
   .span-diamond {
     text-align: left;
-     float: left;
+/*      float: left; */
      font-weight: bold;
      color: aqua;
      margin-top: 10px;
@@ -62,43 +62,62 @@ body {
   
   .clock  {
     text-align: right;
-    float: right;
+/*     float: right; */
     margin-top: 10px;
     
  }
 
  .span-clock {
     text-align: right;
-    float: right;
     color: rgba(255, 255, 255, 0.5)
     
  }
   
- hr {
-    color: aliceblue;
-    position: inherit;
- }
 
  #avatar1 {
-     width: 50px;
+     width: 40px;
+     height: 40px;
      text-align: left;
      margin-top: 10px;
+     margin-right: 25px;
+     border: 1px solid white;
+     border-radius: 100%;
  }
 
 .footer-text1 {
     text-align: right;
-    float: right;
     margin-top: 10px;
-    color: rgba(255, 255, 255, 0.5)
+    color: rgba(255, 255, 255, 0.5);
+
 }
 
 
 .footer-text2 {
     text-align: right;
-    float: right;
     margin-top: 10px;
     font-weight: bold;
     color: white;
 }
 
 
+.diamond-container {
+   float: left;
+}
+
+.clock-container {
+   float: right;
+}
+
+.avatar-container {
+   margin-top: 80px;
+   position: relative;
+}
+
+
+.avatar-container hr {
+   position: absolute;
+   color: rgba(255, 255, 255, 0.5);
+   width: 100%;
+   top: -15px;
+
+}
