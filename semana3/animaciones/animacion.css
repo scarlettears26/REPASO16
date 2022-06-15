@@ -1,0 +1,17 @@
+.div3 {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    transition: width 6s; height: 6s; background-color: 6s;
+    /*transition: all 6s, le cambia a todos width, heigth, background-color*/
+}
+
+.div3:hover {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to right, red 33.3%, white 33.3%, white 66.7%, red 66.7%);
+    border: 1px black solid;
+    transform: translate(50px, 50px);
+    transition: width 2s, height 2s, background-color 2s;
+
+    }
