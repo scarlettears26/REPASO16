@@ -102,3 +102,114 @@ header a:hover {
 .dropdown:hover .dropdown-button {
     text-decoration: underline;
 }
+
+
+
+
+.submenu {
+    display: block;
+    
+
+}
+
+/*el menu escondido*/
+.submenu-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px black (0,0,0,0,0.5);
+    z-index: 1;
+    /*se superpone en el eje z y lo tapa*/
+}
+
+
+/*cada elemento del menu escondido*/
+.submenu-content > li {
+    display: block;
+    padding: 20px 10px;
+}
+
+/*las anclas que estend entro de cada elemento del menu esocndido*/
+.submenu-content li a {
+    text-decoration: none;
+    color: #666; 
+}
+
+
+.submenu-content  li  a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+/*cuando el cursos esta por encima de dropdown (padre) aplicar solo a dropdown-content (menu) los estilos*/
+.submenu:hover .submenu-content {
+    display: block;
+    background-color: red;
+    transition: all 2s;
+}
+
+
+/*cuando el cursos esta por encima de dropdown (padre) aplicar solo a dropdown-content (menu) los estilos*/
+.submenu:hover .submenu-button {
+    text-decoration: underline;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    body {
+        background-color: red;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+ 
+    body {
+        background-color: yellow;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    body {
+        background-color: purple;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    body {
+        background-color: blue;
+    }
+
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100vh;
+        width: 45%;
+    }
+
+    header ul {
+        margin-top: 20px;
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    body {
+        background-color: pink;
+    }
+}
