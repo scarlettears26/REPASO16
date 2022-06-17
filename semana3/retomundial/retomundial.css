@@ -1,215 +1,194 @@
 /*Global*/
 
 * {
-    font-family: Helvetica, sans-serif;
     margin: 0;
-    padding: 0
-    
-}
-
-/*Header*/
-
-header {
+    padding: 0;
+    font-family: Arial, Helvetica;
+  }
+  
+  /* Header */
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    box-shadow: 0px 1px 8px #666;
-    /*eje x, 1px abajo, 8px de difuminacion*/
-    background-color: gray;
-    
-}
-
-#nav-title {
-   margin-right: auto;
-   font-size: 1.5sem;
-}
-
-h1 {
-font-size: 1.5sem;
-}
-
-header li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
-}
-
-header ul {
+    box-shadow: 0 1px 8px #666;
+    background-color: #c9c9c9;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  header ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
     padding: 0 20px;
-    /*aariba ya abajo niggun relleno, derecha izquierda 20px*/
-}
-
-header a {
+  }
+  
+  header a {
     text-decoration: none;
-    color: whitesmoke;
+    color: #fff;
     transition: all 0.3s;
-}
-
-header a:hover {
-    color: antiquewhite;
-}
-
-.dropdown {
+  }
+  
+  header a:hover {
+    color: #b2dfdb;
+    transition: all 0.5s;
+  }
+  
+  /* DROPDOWN: Menu desplegable */
+  .dropdown {
     display: block;
-    
-
-}
-
-/*el menu escondido*/
-.dropdown-content {
+  }
+  
+  /* El menú escondido */
+  .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     width: 160px;
-    box-shadow: 0px 8px 16px 0px black (0,0,0,0,0.5);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
     z-index: 1;
-    /*se superpone en el eje z y lo tapa*/
-}
-
-
-/*cada elemento del menu escondido*/
-.dropdown-content > li {
+    margin-left: -10%;
+  }
+  
+  /* Cada elemento del menú escondido */
+  .dropdown-content li {
     display: block;
     padding: 20px 10px;
-}
-
-/*las anclas que estend entro de cada elemento del menu esocndido*/
-.dropdown-content li a {
+  }
+  
+  /* Las anclas que estén dentro de cada elemento del menú escondido */
+  .dropdown-content li a {
     text-decoration: none;
-    color: #666; 
-}
-
-
-.dropdown-content  li  a:hover {
+    color: #666;
+  }
+  .dropdown-content li a:hover {
     text-decoration: underline;
     color: #333;
-}
-
-/*cuando el cursos esta por encima de dropdown (padre) aplicar solo a dropdown-content (menu) los estilos*/
-.dropdown:hover .dropdown-content {
+  }
+  
+  /* 
+      Cuando el cursor está por encima de dropdown (padre) 
+      Aplicar solo a dropdown-content (menu) los estilos:
+  */
+  .dropdown:hover .dropdown-content {
     display: block;
-    background-color: red;
-    transition: all 2s;
-}
-
-
-/*cuando el cursos esta por encima de dropdown (padre) aplicar solo a dropdown-content (menu) los estilos*/
-.dropdown:hover .dropdown-button {
+  }
+  
+  /* 
+      Cuando el cursor está por encima de dropdown (padre) 
+      Aplicar solo a dropdown-button (botón) los estilos:
+  */
+  .dropdown:hover .dropdown-button {
     text-decoration: underline;
+  }
+
+  /*Main*/
+
+  main {
+    width: 100%;
 }
 
-
-
-
-.submenu {
-    display: block;
+ #container {
+    margin: 50px auto;
+    width: 50%;
     
 
-}
+  }
 
-/*el menu escondido*/
-.submenu-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    width: 160px;
-    box-shadow: 0px 8px 16px 0px black (0,0,0,0,0.5);
-    z-index: 1;
-    /*se superpone en el eje z y lo tapa*/
-}
+  #container h2 {
+    margin-bottom: 10px;
+    
+  }
 
+  .table {
+    box-shadow: 10px 10px 20px #ccc;
+    border-radius: 10px;
+  }
 
-/*cada elemento del menu escondido*/
-.submenu-content > li {
-    display: block;
-    padding: 20px 10px;
-}
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
 
-/*las anclas que estend entro de cada elemento del menu esocndido*/
-.submenu-content li a {
-    text-decoration: none;
-    color: #666; 
-}
+  .row > div {
+    width: 25%;
+    text-align: center;
+  }
 
 
-.submenu-content  li  a:hover {
-    text-decoration: underline;
-    color: #333;
-}
-
-/*cuando el cursos esta por encima de dropdown (padre) aplicar solo a dropdown-content (menu) los estilos*/
-.submenu:hover .submenu-content {
-    display: block;
-    background-color: red;
-    transition: all 2s;
-}
+  .th {
+    background-color: #333;
+    color: #f1f1f1;
+    font-weight: bolder;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: var(--texto-grande);
+  }
 
 
-/*cuando el cursos esta por encima de dropdown (padre) aplicar solo a dropdown-content (menu) los estilos*/
-.submenu:hover .submenu-button {
-    text-decoration: underline;
-}
+  .tr {
+    background-color: var(--primer-color);
+    border-bottom:  1px #666 dashed;
+    font-size: var(--texto-mediano);
+  }
 
+  /*nth-child es para escoger solo algunas filas, de acuerdo a:*/
+  /* even=par*/
+  /*odd=impar*/
 
+  .tr:nth-child(even) {
+    background-color: var(--segundo-color);
+    font-size: var(--texto-pequeno);
+  }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+  /*last child afecta al ultimo elemento de toda la fila*/
+  .tr:last-child {
+    border-bottom: 1px #666 solid;
+    border-radius: 0px 0px 10px 10px;
+  }
 
-    body {
-        background-color: red;
-    }
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
  
-    body {
-        background-color: yellow;
-    }
+  @media only screen and (max-width: 992px) {
 
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-    body {
-        background-color: purple;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-    body {
-        background-color: blue;
+    #page {
+        display: flex;
     }
 
 
     header {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        height: 100vh;
-        width: 45%;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 100vh;
+      width: 15%;
+      padding: 40px;
     }
-
+  
+    header:hover {
+      width: 30%;
+      padding: 20px 50px;
+      transition: all 1s;
+    }
+  
     header ul {
-        margin-top: 20px;
-        flex-direction: column;
-        padding: 0;
+      margin-top: 20px;
+      flex-direction: column;
+      padding: 0;
     }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-    body {
-        background-color: pink;
+  
+    .dropdown-content {
+      margin-top: 0px;
+      margin-left: 40px;
     }
-}
+
+    
+  }
+
+ 
+ 
